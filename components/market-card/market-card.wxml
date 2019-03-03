@@ -1,0 +1,8 @@
+<!--components/market-card/market-card.wxml-->
+<!-- <text>components/market-card/market-card.wxml</text> -->
+<view class="">
+	<view class="market-card">
+		<text class="text">123456879</text>
+		<slot></slot>
+	</view>
+</view>

@@ -1,0 +1,61 @@
+/**app.wxss**/
+
+@import "icon.wxss";
+
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} */
+
+.pt-btn{
+	background-color: #4394ff;
+	height: 92rpx;
+	line-height: 92rpx;
+	color: #fff;
+	border-radius: 18rpx;
+	letter-spacing: 3rpx;
+}
+
+.pt-btn:active{
+	background-color: rgb(0, 109, 255);
+	color: rgb(204, 225, 255);
+}
+
+.pt-button--disable{
+	background-color: rgb(204, 225, 255);
+}
+
+.pt-textarea{
+	background-color: #f2f2f2;
+	border-radius: 12rpx;
+	padding: 27rpx;
+	width: calc(100% - 54rpx);
+}
+.pt-textarea:placeholder{
+	color: #666666;
+}
+
+
+.pt-tab{
+	color: #999;
+	position: relative;
+	padding-bottom: 15rpx;
+	border-bottom: 14rpx solid transparent;
+}
+.pt-tab--active{
+	color: #4394ff;
+	border-bottom: 10rpx solid #4394ff;
+}
+
+.pt-form-item{
+	height: 80rpx;
+	line-height: 80rpx;
+	padding-left: 27rpx; 
+	border-bottom: 1rpx solid #e9e9e9;
+}
+

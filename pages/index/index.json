@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+  	"pt-button": "../../components/button/button",
+  	"market-card": "../../components/market-card/market-card"
+
+  }
+}

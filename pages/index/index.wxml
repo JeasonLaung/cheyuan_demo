@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<!-- <pt-button bindtap="bindViewTap">确认发布</pt-button> -->
+<!-- <pt-textarea></pt-textarea> -->
+
+<view style="padding:20rpx;">
+
+<textarea class="pt-textarea" placeholder="" maxlength="0" ></textarea>
+<text class="pt-tab pt-tab--active">车源信息</text>
+<text class="pt-tab">车源信息</text>
+
+</view>
+<button class="pt-btn">确认发布</button>
+<view class="pt-form-item">123</view>
+<market-card>4444444</market-card>
+<text class="text">465789</text>456789456132

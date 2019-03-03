@@ -1,0 +1,6 @@
+<!--components/basic/button.wxml-->
+<!-- <text>components/basic/button.wxml</text> -->
+<button class="pt-button">
+	<icon class="iconfont {{icon ? 'icon-' + icon : ''}}"></icon>
+	<text><slot>{{value}}</slot></text>
+</button>
