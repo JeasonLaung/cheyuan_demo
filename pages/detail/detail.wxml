@@ -1,0 +1,49 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<view class='ask-car'>
+  <view class='ask-car_header'>
+    奔驰2019款CLA 220 4 MATIC
+  </view>
+  <view class='ask-car_info'>
+    <view class='ask-car_info__item'>
+      <text>颜色：黑色</text>
+      <text>指导价：99.99万元</text>
+    </view>
+    <view class='ask-car_info__item'>
+      <text>上牌城市：佛山</text>
+      <text>期待价：<text class='ask-car_info__price'>99.99</text>万元</text>
+    </view>
+    <view class='ask-car_info__item'>
+      <text>生产日期：3个月内</text>
+      <text class="ask-car_info__datetime">2小时前</text>
+    </view>
+  </view>
+  <view class='ask-car_note'>
+    备注信息
+    <view class='ask-car_note__text'>
+      我是备注我是备注我是备注我是备注我是备注我是备注我是备注我是备注
+    </view>
+  </view>
+</view>
+
+<!-- 报价 -->
+<view class='price-recept'>
+  <view class='price-recept_header'>
+    已收到9个报价
+  </view>
+  <view class='price-recept_list' wx:for="i in 5" wx:key="i">
+    <view class='price-recept_list__header'>
+      <text>销售顾问某某</text>
+      <text class='price-recept_list__header--datetime'>2019-01-09 18:36</text>
+    </view>
+    <view class='price-recept_info'>
+      <view class='price-recept_list__price'>
+        <text>￥ 99.99</text>万元
+      </view>
+      <view class='price-recept_list__note'>
+        含购置税、保险
+      </view>
+    </view>
+    
+  </view>
+</view>

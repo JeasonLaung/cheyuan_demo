@@ -16,6 +16,7 @@
     
     <view class='header_phone'>
       Tel：13888888888
+      <icon class='iconfont icon-edit' style='margin-left: 18rpx;font-size: 22rpx;' bindtap='handleChangeInfo'></icon>
     </view>
   </view>
 </view>
@@ -35,7 +36,7 @@
 
   </view>
   
-  <view class='list'>
+  <view class='list' bindtap='handleMessage'>
     <icon class='iconfont icon-message list_left'></icon>
     我的消息
     <icon class='iconfont icon-right'></icon>
@@ -46,8 +47,6 @@
     <icon class='iconfont icon-tip list_left'></icon>
     帮助反馈
     <icon class='iconfont icon-right'></icon>
-
   </view>
-
 
 </view>

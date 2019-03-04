@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.6.1",
 	"appid": "wxacedad601ce242c6",
-	"projectname": "putao-react",
+	"projectname": "putao",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

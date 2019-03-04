@@ -7,7 +7,17 @@ Page({
   data: {
 
   },
-
+  handleMessage: function(){
+    wx.navigateTo({
+      url: '/pages/message/message',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  handleChangeInfo: function() {
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */

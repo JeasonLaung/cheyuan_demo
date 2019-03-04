@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/detail/detail",
+    "pages/home/home",
     "pages/message/message",
     "pages/me/me",
     "pages/ask/ask",
     "pages/publish/publish",
-    "pages/home/home",
     "pages/index/index",
     "pages/logs/logs",
     "pages/brand/brand"

@@ -1,25 +1,13 @@
-// pages/publish/publish.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    current_index: 0,
+
   },
-  handleTap: function (e) {
-    var current = e.target.dataset.index;
-    // console.log(e)
-    this.setData({
-      current_index: current
-    })
-  },
-  handleChange: function(e){
-    var current = e.detail.current;
-    this.setData({
-      current_index: current
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
