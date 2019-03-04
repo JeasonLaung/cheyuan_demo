@@ -1,0 +1,59 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<view>
+
+  <!-- 搜索栏 -->
+  <view class='header'>
+    <view bindtap='chooseBrand'>
+      <text>品牌</text>
+      <icon class='iconfont icon-more'></icon>
+    </view>
+    <view class='search-container'>
+      <input class='pt-search' type='text' placeholder='请输入关键字'></input>
+      <icon class='iconfont icon-search'></icon>
+    </view>
+  </view><!-- header -->
+
+  <!-- 内容 -->
+  <view class='container'>
+    <!-- 通知栏 -->
+    <view class='notice'>
+      <view class='notice_icon-container'>
+        <icon class='iconfont icon-notice'></icon>
+      </view>
+      <view class='notice_text'>公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</view>
+      <view class='notice_close'>
+        <icon class='iconfont icon-close'></icon>
+      </view>
+    </view>
+  
+
+    <!-- 销售行情list -->
+    <view class='market-container' wx:for='i in 3' wx:key="i">
+      <view class='market'>
+        <view class="market_header">
+          <text class='market_title'>销售顾问</text>
+          <view class='market_icon-group'>
+            <icon class='iconfont icon-heart'></icon>
+            <icon class='iconfont icon-share'></icon>
+            <icon class='iconfont icon-tel'></icon>
+          </view>
+        </view><!-- market_header -->
+        <view class='market_middle clearfix'>
+          <image src='/assets/benz.jpg' class='market_car-logo'></image>
+          <text class='market_car-name'>梅塞德斯-奔驰</text>
+          <text class='market_datetime'>2019年1月24日行情</text>
+        </view>
+
+        <view class='market_content'>
+          <view class='market_content__row' wx:for="i in 16" wx:key="i">C260L大标-3808黑白809</view>
+        </view>
+
+      </view>
+    </view>
+
+
+  </view>
+  
+
+</view>

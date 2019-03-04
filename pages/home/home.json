@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "market-card": "/components/market-card/market-card"
+  }
+}

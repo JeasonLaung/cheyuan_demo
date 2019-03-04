@@ -1,0 +1,169 @@
+/* pages/home/home.wxss */
+page{
+  background-color: #f2f2f2;
+}
+
+.header{
+  height: 115rpx;
+  line-height: 115rpx;
+  background-image: linear-gradient(-9deg, 
+		#2846fe 0%, 
+		#3975ff 50%, 
+		#4394ff 100%), 
+	linear-gradient(
+		#cfcfcf, 
+		#cfcfcf);
+    font-size: 30rpx;
+    color: #fff;
+    padding-left: 28rpx;
+    display: flex;
+}
+.icon-more{
+  font-size: 17rpx;
+  margin: 0 69rpx 0 18rpx;
+  transform: translateY(-3rpx);
+}
+
+.pt-search{
+  margin-top: 28rpx;
+  width: 407rpx;
+  background-color: #fff;
+	opacity: 0.8;
+  font-size: 27rpx;
+  border-radius: 26rpx;
+  height: 61rpx;
+  padding: 0 26rpx;
+}
+.search-container{
+  position: relative;
+}
+.icon-search{
+  position: absolute;
+  color: #2947fe;
+  top: 0;
+  right: 27rpx;
+}
+
+.container{
+  padding: 28rpx;
+}
+
+
+/* 通知栏 */
+.notice{
+  display: flex;
+  background-color: #ddefff;
+  height: 60rpx;
+  border-radius: 30rpx;
+  box-shadow: 0px 1px 5px 0px	rgba(58, 123, 255, 0.27);
+}
+.notice_icon-container{
+  box-shadow: 0px 1px 5px 0px 
+		rgba(58, 123, 255, 0.27);
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  width: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #666;
+}
+.notice_text{
+  letter-spacing: 0px;
+	color: #4394ff;
+  font-size: 27rpx;
+  line-height: 60rpx;
+  max-width: 536rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 31rpx;
+  margin-left: 18rpx;
+  
+}
+.icon-close{
+  font-size: 26rpx;
+  color: #86baff;
+}
+
+/* 行情 */
+
+.market-container{
+  margin: 26rpx 0;
+  
+}
+.market{
+  background-color: #ffffff;
+	box-shadow: 0px 4px 9px 0px 
+		rgba(58, 123, 255, 0.1);
+	border-radius: 24px;
+	border: solid 1px #ffffff;
+  padding: 0 28rpx;
+  
+}
+.market_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.market_title{
+  font-size: 33rpx;
+  font-weight: bolder;
+  margin-bottom: 27r;
+  color: #333333;
+  padding: 27rpx 0;
+}
+.market_icon-group{
+  color: #c4c9cf;
+  font-size: 30rpx;
+  margin: -4rpx 0 4rpx;
+
+
+}
+.market_icon-group > .iconfont + .iconfont{
+  margin-left: 17rpx;
+}
+
+.market_middle{
+  padding-bottom: 31rpx;
+	border-bottom: solid 1px #e9e9e9;
+}
+.market_car-logo{
+  width: 37rpx;
+	height: 38rpx;
+  margin-right: 19rpx;
+  float: left;
+
+}
+.market_car-name{
+	width: 199rpx;
+	height: 30rpx;
+	font-family: PingFang-SC-Medium;
+	font-size: 30rpx;
+	color: #333333;
+  float: left;
+
+}
+.market_datetime{
+  float:right;
+  font-size: 24rpx;
+	color: #999999;
+}
+
+.market_content{
+  padding: 26rpx 0 55rpx;
+}
+.market_content__row{
+  list-style: square inside;
+	font-family: PingFang-SC-Regular;
+	font-size: 27rpx;
+	color: #666666;
+  line-height: 39rpx;
+}
+.market_content__row::before{
+  content:"●";
+  display: inline-block;
+  font-size: 20rpx;
+  margin-right: 30rpx;
+  transform: translateY(-5rpx);
+}

@@ -1,0 +1,74 @@
+<!--pages/ask/ask.wxml-->
+<!-- <text>pages/ask/ask.wxml</text> -->
+<!-- 弹出报价 -->
+<view class='quoted' wx:if="{{quote}}">
+  <view class='quoted_mask' catchtap='handleCancelQuote'></view>
+  <view class='quoted_dialog'>
+    <view class='quoted_header' catchtap='handleCancelQuote'>
+      <icon class='iconfont icon-left'></icon>
+      我要报价
+    </view>
+    <view class='quoted_car'>
+      奔驰2019款XXXXXXXXX
+    </view>
+    <view>
+      <input class='quoted_input' placeholder='请输入车辆的报价（单位：万元）'></input>
+    </view>
+    <view class='quoted_car'>
+      <textarea class='quoted_input' placeholder='请输入备注信息'></textarea>
+    </view>
+    <view>
+      <button class='pt-btn'>提交报价</button>
+    </view>
+  </view>
+
+  
+</view>
+
+
+
+<!-- 搜索栏 -->
+<view class='header'>
+  <view bindtap='chooseBrand'>
+    <text>筛选</text>
+    <icon class='iconfont icon-more'></icon>
+  </view>
+  <view class='search-container'>
+    <input class='pt-search' type='text' placeholder='请输入关键字'></input>
+    <icon class='iconfont icon-search'></icon>
+  </view>
+</view><!-- header -->
+
+<scroll-view>
+  <view class='ask-car' wx:for="i in 16" wx:key="i">
+    <view class='ask-car_header'>
+      奔驰2019款CLA 220 4 MATIC
+      <icon class='iconfont icon-right'></icon>
+    </view>
+    <view class='ask-car_info'>
+      <view class='ask-car_info__item'>
+        <text>颜色：黑色</text>
+        <text>指导价：99.99万元</text>
+      </view>
+      <view class='ask-car_info__item'>
+        <text>上牌城市：佛山</text>
+        <text>期待价：<text class='ask-car_info__price'>99.99</text>万元</text>
+      </view>
+      <view class='ask-car_info__item'>
+        <text>生产日期：3个月内</text>
+        <text class="ask-car_info__datetime">2小时前</text>
+      </view>
+    </view>
+
+    <view class='ask-car_action'>
+      <view class='ask-car_action__item' bindtap='handleQuote'>
+        <icon class='iconfont icon-money'></icon>我要报价
+      </view>
+      <view class='ask-car_action__item'>
+        <icon class='iconfont icon-phone'></icon>
+        电话联系
+      </view>
+    </view>
+  </view>
+</scroll-view>
+  

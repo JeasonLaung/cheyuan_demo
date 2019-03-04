@@ -1,12 +1,49 @@
 {
-  "pages":[
+  "pages": [
+    "pages/me/me"
+    "pages/ask/ask",
+    "pages/publish/publish",
+    "pages/home/home",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/brand/brand"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a1a8b1",
+    "selectedColor": "#2846fe",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "车源信息",
+        "iconPath": "/assets/car.png",
+        "selectedIconPath": "/assets/car_active.png"
+      },
+      {
+        "pagePath": "pages/ask/ask",
+        "text": "寻车需求",
+        "iconPath": "/assets/search.png",
+        "selectedIconPath": "/assets/search_active.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布信息",
+        "iconPath": "/assets/publish.png",
+        "selectedIconPath": "/assets/publish_active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "个人中心",
+        "iconPath": "/assets/me.png",
+        "selectedIconPath": "/assets/me_active.png"
+      }
+    ]
   }
 }

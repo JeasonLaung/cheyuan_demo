@@ -1,0 +1,38 @@
+<!--pages/brand/brand.wxml-->
+<!-- <text>pages/brand/brand.wxml</text> -->
+<scroll-view>
+  <!-- 关注品牌 -->
+  <view class='cake'>
+    <view class='cake_title'>关注品牌</view>
+    <view class='cake_tags'>
+      <view class='cake_tag cake_tag--active'>奔驰</view>
+      <view class='cake_tag'>一汽大众</view>
+      <view class='cake_tag'>奥迪</view>
+      <view class='cake_tag'>雷克萨斯</view>
+      <view class='cake_tag'>一汽马自达</view>
+      <view class='cake_tag'>奔驰</view>
+      <view class='cake_tag'>一汽大众</view>
+      <view class='cake_tag'>一汽马自达</view>
+    </view>
+  </view>
+  
+  <!-- 品牌列表 -->
+  <view class='cake'>
+    <view class='cake_title'>品牌列表</view>
+    <view class='cake_lists'>
+      <view class='cake_lists__title'>A</view>
+      <view class='cake_list' wx:for="i in 10">
+        <image src='/assets/audi.jpg' mode="widthFix" class='cake_list__logo'></image>
+        奥迪
+      </view>
+    </view>
+    <view class='cake_lists'>
+      <view class='cake_lists__title'>B</view>
+      <view class='cake_list' wx:for="i in 10">
+        <image src='/assets/audi.jpg' mode="widthFix" class='cake_list__logo'></image>
+        奥迪
+      </view>
+    </view>
+  </view>
+    
+</scroll-view>

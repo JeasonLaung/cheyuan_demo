@@ -1,0 +1,63 @@
+<!--pages/publish/publish.wxml-->
+<!-- <text>pages/publish/publish.wxml</text> -->
+<!-- tab切换 -->
+<view class='tabbar'>
+  <view class='tabbar_item' bindtap='handleTap' data-index="0">
+    <text class='pt-tab {{current_index == 0 ? "pt-tab--active" : ""}}'  data-index="0">
+      车源信息
+    </text>
+  </view>
+  <view class='tabbar_item' bindtap='handleTap' data-index="1">
+    <text class='pt-tab {{current_index == 1 ? "pt-tab--active" : ""}}'  data-index="1"> 
+      寻车需求
+    </text>
+  </view>
+</view>
+
+<!-- 内容页 -->
+<swiper class='container' current='{{current_index}}' bindchange="handleChange">
+  <swiper-item>
+    <textarea class='pt-textarea' placeholder='请输入车源的详细信息' maxlength='0'></textarea>
+    <button class='pt-btn'>确认发布</button>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='form-lists'>
+      <view class='form-list'>
+        <input class='form-list_input' placeholder='请选择品牌' disabled='true'></input>
+        <icon class='iconfont icon-right'></icon>
+      </view>
+
+      <view class='form-list'>
+        <input class='form-list_input' placeholder='请选择车型' disabled='true'></input>
+        <icon class='iconfont icon-right'></icon>
+      </view>
+
+      <view class='form-list'>
+        <input class='form-list_input' placeholder='请填写车型配置'></input>
+      </view>
+      <view class='form-list'>
+        <input class='form-list_input' placeholder='请填写外观颜色/内饰颜色'></input>
+      </view>
+      <view class='form-list'>
+        <input class='form-list_input' placeholder='请填写意向价格（单位：万元）'></input>
+      </view>
+
+      <view class='form-list'>
+        <input class='form-list_input' placeholder='请选择可接受生产日期' disabled='true'></input>
+        <icon class='iconfont icon-right'></icon>
+      </view>
+      <view class='form-list' style='display:flex;'>
+        <icon class='iconfont icon-location' style='margin-right:22rpx;'></icon>
+        <input class='form-list_input' placeholder='选择提车的地区'></input>
+        <icon class='iconfont icon-right'></icon>
+      </view>
+
+      <view>
+        <text style='color: #999999; font-size: 30rpx;margin-left:27rpx; line-height: 80rpx'>备注信息</text>
+        <textarea class='pt-textarea' placeholder=''></textarea>
+      </view>
+    </view>
+    <button class='pt-btn'>确认发布</button>
+  </swiper-item>
+</swiper>

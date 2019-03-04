@@ -1,0 +1,67 @@
+/* pages/brand/brand.wxss */
+page{
+  font-size: #333;
+  background-color: #f2f2f2;
+}
+.cake{
+  padding: 27rpx 53rpx;
+  background-color: #fff;
+}
+.cake + .cake{
+  border-top: solid 1px #e9e9e9;
+}
+.cake_title{
+	font-size: 30rpx;
+	color: #333333;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+
+.cake_tag{
+  display: inline-block;
+  font-size: 27rpx;
+  width: 148rpx;
+	height: 61rpx;
+  line-height: 61rpx;
+  text-align: center;
+  color: #666666;
+  border-radius: 12rpx;
+  background-color: #e6ecf4;
+  
+}
+.cake_tag + .cake_tag{
+  margin-left: 17rpx;
+}
+.cake_tag:nth-child(4n+1){
+  margin-left: 0;
+  margin-top: 18rpx;
+}
+.cake_tag--active{
+  color: #fff;
+  background-color: #4394ff;
+}
+
+
+.cake_lists{
+  background-color: #fff;
+}
+.cake_lists + .cake_lists{
+  margin-top: 36rpx;
+}
+.cake_lists__title{
+  font-size: 27rpx;
+	color: #4394ff;
+  margin: 7rpx;
+}
+.cake_list{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 27rpx;
+  color: #666666;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+
+.cake_list__logo{
+  width: 65rpx;
+  margin-right: 22rpx;
+}

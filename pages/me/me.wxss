@@ -1,0 +1,13 @@
+/* pages/me/me.wxss */
+
+.header{
+  width: 750rpx;
+	/* height: 244rpx; */
+	background-image: linear-gradient(-9deg, 
+		#2846fe 0%, 
+		#3975ff 50%, 
+		#4394ff 100%), 
+	linear-gradient(
+		#cfcfcf, 
+		#cfcfcf);
+}
