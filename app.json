@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/me/me"
+    "pages/message/message",
+    "pages/me/me",
     "pages/ask/ask",
     "pages/publish/publish",
     "pages/home/home",
@@ -12,7 +13,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "采购信息整合平台",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -39,7 +40,7 @@
         "selectedIconPath": "/assets/publish_active.png"
       },
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/me/me",
         "text": "个人中心",
         "iconPath": "/assets/me.png",
         "selectedIconPath": "/assets/me_active.png"

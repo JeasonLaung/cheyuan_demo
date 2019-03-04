@@ -1,8 +1,10 @@
 /* pages/me/me.wxss */
-
+page{
+  background-color: #f2f2f2;
+}
 .header{
   width: 750rpx;
-	/* height: 244rpx; */
+	height: 168rpx;
 	background-image: linear-gradient(-9deg, 
 		#2846fe 0%, 
 		#3975ff 50%, 
@@ -10,4 +12,89 @@
 	linear-gradient(
 		#cfcfcf, 
 		#cfcfcf);
+  padding-top: 76rpx;
+  display: flex;
+  margin-bottom: 27rpx;
+}
+
+.header_face{
+  border: 2rpx solid #ddecff;
+  border-radius: 50rpx;
+  height:100rpx;
+  width:100rpx;
+  background-color: #fff;
+  /* margin-top: 76rpx; */
+  margin: 0 33rpx;
+  background-size: 100rpx;
+  background-repeat: no-repeat;
+
+}
+.header_name{
+	font-family: PingFang-SC-Medium;
+	font-size: 36rpx;
+	color: #ffffff;
+  font-weight: bold;
+}
+
+.header_company{
+	font-size: 22rpx;
+	color: #e8f2ff;
+  margin: 8rpx 0;
+}
+.header_phone{
+  font-size: 22rpx;
+	color: #e8f2ff;
+}
+
+
+
+
+/* list */
+.lists{
+  background-color: #fff;
+  padding-bottom: 50rpx;
+}
+.list{
+  position: relative;
+  height: 84rpx;
+  line-height: 84rpx;
+	font-family: PingFang-SC-Regular;
+	font-size: 30rpx;
+	color: #333333;
+  padding-left: 27rpx;
+	border-bottom: solid 1px #e9e9e9;
+}
+.list:active{
+  background-color: #e9e9e9;
+}
+
+.list_left{
+  color: #4394ff;
+  font-size: 32rpx;
+  margin-right: 17rpx;
+}
+
+.list .icon-right{
+  position: absolute;
+  top: 0;
+  right: 27rpx;
+  font-size: 27rpx;
+  color:#666;
+}
+
+.list_new-msg{
+  position: absolute;
+  height: 34rpx;
+  width: 34rpx;
+  background-color: #df5064;
+  right: 70rpx;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 34rpx;
+  text-align: center;
+  font-weight: bold;
+  
 }

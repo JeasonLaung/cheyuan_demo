@@ -2,5 +2,52 @@
 <!-- <text>pages/me/me.wxml</text> -->
 
 <view class='header'>
+  <view class='header_face' style='background-image:url("/assets/face.gif")'>
+  </view>
+
+  <view>
+    <view class='header_name'>
+      销售顾问A
+    </view>
+
+    <view class='header_company'>
+      佛山顺德葡萄汽车租赁有限公司
+    </view>
+    
+    <view class='header_phone'>
+      Tel：13888888888
+    </view>
+  </view>
+</view>
+
+
+<view class='lists'>
+  <view class='list'>
+    <icon class='iconfont icon-car list_left'></icon>
+    我的车源
+    <icon class='iconfont icon-right'></icon>
+  </view>
+
+  <view class='list'>
+    <icon class='iconfont icon-search list_left'></icon>
+    我的寻车需求
+    <icon class='iconfont icon-right'></icon>
+
+  </view>
+  
+  <view class='list'>
+    <icon class='iconfont icon-message list_left'></icon>
+    我的消息
+    <icon class='iconfont icon-right'></icon>
+    <view class='list_new-msg'>99</view>
+  </view>
+
+  <view class='list'>
+    <icon class='iconfont icon-tip list_left'></icon>
+    帮助反馈
+    <icon class='iconfont icon-right'></icon>
+
+  </view>
+
 
 </view>

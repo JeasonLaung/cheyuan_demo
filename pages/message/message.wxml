@@ -1,0 +1,19 @@
+<!--pages/message/message.wxml-->
+<!-- <text>pages/message/message.wxml</text> -->
+<view class='message'>
+  <view class='message_list' wx:for="i in 5" wx:key="i">
+    <text class='message_detail'>你关注的品牌宝马有新的购车需求，点我查看!</text>
+    <view>
+      <text class='message_list__price'>意向价格：99.99万元</text>
+    </view>
+
+    <view class='message_time'>
+      <view>
+        <text>1分钟前</text>
+        <!-- 已读消息 -->
+        <text class='message_has-read'>已读</text>
+        </view>
+      <text>详情  ></text>
+    </view>
+  </view>
+</view>

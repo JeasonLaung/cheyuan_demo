@@ -1,0 +1,45 @@
+/* pages/message/message.wxss */
+
+/* .message{
+  
+} */
+.message{
+  padding: 27rpx;
+  padding-bottom: 115rpx;
+}
+.message_list{
+  height: 143rpx;
+  padding: 27rpx 0;
+  border-bottom:2rpx solid #eee;
+  
+}
+.message_list:active{
+  background-color: #eee;
+}
+.message_detail{
+	font-family: PingFang-SC-Regular;
+	font-size: 27rpx;
+	color: #333333;
+}
+.message_list__price{
+	font-family: PingFang-SC-Bold;
+	font-size: 27rpx;
+	color: #4394ff;
+  font-weight: bolder;
+}
+
+.message_time{
+  margin-top: 24rpx;
+	font-family: PingFang-SC-Regular;
+	font-size: 24rpx;
+	color: #999999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message_has-read{
+  margin-left: 18rpx;
+  color: #999999;
+  border: 1rpx solid #999999;
+  padding: 2rpx 5rpx;
+}
