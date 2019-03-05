@@ -36,12 +36,14 @@ page{
 }
 .search-container{
   position: relative;
+  color: #333;
 }
 .icon-search{
   position: absolute;
   color: #2947fe;
   top: 0;
   right: 27rpx;
+  
 }
 
 .container{
@@ -67,6 +69,9 @@ page{
   text-align: center;
   line-height: 60rpx;
   color: #666;
+}
+.icon-notice{
+  margin: -5rpx 0 5rpx;
 }
 .notice_text{
   letter-spacing: 0px;
@@ -115,13 +120,13 @@ page{
 }
 .market_icon-group{
   color: #c4c9cf;
-  font-size: 30rpx;
+  font-size: 32rpx;
   margin: -4rpx 0 4rpx;
 
 
 }
 .market_icon-group > .iconfont + .iconfont{
-  margin-left: 17rpx;
+  margin-left: 30rpx;
 }
 
 .market_middle{

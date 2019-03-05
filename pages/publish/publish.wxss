@@ -9,7 +9,7 @@ page{
 
 .container{
   flex: 1;
-  overflow: scroll;
+  display: flex;
   /* padding: 27rpx; */
 }
 .tabbar{

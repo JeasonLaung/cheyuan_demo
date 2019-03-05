@@ -1,15 +1,19 @@
 {
   "pages": [
-    "pages/detail/detail",
     "pages/home/home",
+    "pages/publish/publish",
+    "pages/ask/ask",
+    
+    "pages/detail/detail",
     "pages/message/message",
     "pages/me/me",
-    "pages/ask/ask",
-    "pages/publish/publish",
+    
+    
     "pages/index/index",
     "pages/logs/logs",
     "pages/brand/brand"
     
+
   ],
   "window": {
     "backgroundTextStyle": "light",

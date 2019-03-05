@@ -1,43 +1,13 @@
-// pages/ask/ask.js
+// pages/components/prompt/prompt.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    quote: false
+
   },
-  handleMakePhoneCall: function(e){
-    wx.makePhoneCall({
-      phoneNumber: e.target.dataset.phone
-    })
-  },
-  handleFilter:function(e){
-    wx.navigateTo({
-      url: '/pages/brand/brand',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
-  },
-  handleDetail:function(){
-    wx.navigateTo({
-      url: '/pages/detail/detail',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
-  },
-  handleCancelQuote: function(){
-    this.setData({
-      quote: false
-    })
-  },
-  handleQuote:function(){
-    this.setData({
-      quote: true
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

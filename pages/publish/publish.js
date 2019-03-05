@@ -1,11 +1,87 @@
 // pages/publish/publish.js
 Page({
 
+  resetData:function(obj){
+    if (this.data[obj] instanceof String){
+      this.setData({
+        [obj]: ''
+      })
+    }
+    else{
+      var tmp = {}
+      for (var i in this.data[obj]){
+        tmp[i] = ''
+      }
+      this.setData({
+        [obj]: tmp
+      })
+    }
+  },
+
   /**
    * 页面的初始数据
    */
   data: {
+    showPrompt: false,
     current_index: 0,
+    form:{
+      date: '',
+      region: '',
+      brand: '',
+      motor: ''
+    },
+    brand_arr: [
+      {
+        id: '1',
+        name: '奔驰'
+      },
+      {
+        id: '2',
+        name: '宝马'
+      },
+      {
+        id: '3',
+        name: '林肯'
+      },
+      {
+        id: '4',
+        name: '雷克萨斯'
+      }
+    ],
+    motor_arr: [
+      {
+        id: '1',
+        name: 'X0'
+      },
+      {
+        id: '2',
+        name: 'X1'
+      },
+      {
+        id: '3',
+        name: 'X2'
+      },
+      {
+        id: '4',
+        name: 'X3'
+      }
+    ]
+    
+  },
+
+  actionPublish: function () {
+    this.selectComponent('#prompt').alert({
+      title: '提示',
+      message: '发布成功'
+    })
+    this.resetData('form');
+  },
+  bindSelectorChange:function(e){
+    var type = e.target.dataset.type;
+
+    this.setData({
+      ['form.'+type]: e.detail.value
+    })
   },
   handleTap: function (e) {
     var current = e.target.dataset.index;
